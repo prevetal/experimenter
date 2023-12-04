@@ -197,10 +197,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
 			preloadImages: false,
 			lazy: {
 				enabled: true,
@@ -233,10 +229,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
 			preloadImages: false,
 			lazy: {
 				enabled: true,
