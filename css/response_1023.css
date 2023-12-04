@@ -1,0 +1,762 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 48px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header,
+    header.absolute
+    {
+        color: var(--text_color);
+
+        position: fixed;
+        top: 0;
+        right: 100%;
+        left: auto;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+        padding-top: 58px;
+
+        transition: transform .3s linear;
+    }
+
+    header.show
+    {
+        transform: translateX(100%);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 45px 0;
+
+        background: #fff;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overscroll-behavior-y: contain;
+    }
+
+    header .scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .logo,
+    header .location,
+    header .contacts
+    {
+        display: none;
+    }
+
+    header .contacts + .contacts
+    {
+        display: block;
+
+        width: 100%;
+        margin-top: 45px;
+
+        order: 3;
+    }
+
+
+    header .contacts .phone
+    {
+        text-align: center;
+    }
+
+    header .contacts .phone + .phone
+    {
+        margin-top: 8px ;
+    }
+
+
+    header .contacts .phone a
+    {
+        display: flex;
+
+        text-decoration: underline;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    header .contacts .phone .icon
+    {
+        display: block;
+    }
+
+
+    header .menu
+    {
+        display: block;
+
+        width: 100%;
+        margin: 0;
+
+        text-align: center;
+    }
+
+    header .menu_item + .menu_item
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: 12px;
+    }
+
+
+    .breadcrumbs
+    {
+        font-size: 13px;
+    }
+
+
+    .page_title
+    {
+        margin-top: 32px;
+    }
+
+    .page_title span
+    {
+        margin-left: 140px;
+    }
+
+
+    .page_desc
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .block_head .title > *:nth-child(2)
+    {
+        padding-left: 140px;
+    }
+
+    .block_head .title > *:nth-child(3)
+    {
+        padding-left: 280px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h1
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 68px;
+    }
+
+
+    .first_section .cont
+    {
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+
+
+    .first_section .block_title > *:nth-child(2)
+    {
+        padding-left: 100px;
+    }
+
+    .first_section .block_title > *:nth-child(3)
+    {
+        padding-left: 176px;
+    }
+
+
+    .first_section .form
+    {
+        width: 480px;
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .title
+    {
+        font-size: 22px;
+    }
+
+
+    .about_info .desc
+    {
+        width: 520px;
+        margin-top: 24px;
+    }
+
+
+    .about_info .link
+    {
+        margin-top: 28px;
+    }
+
+
+
+    /*------------
+        Titles
+    ------------*/
+    .titles
+    {
+        padding: 68px 0;
+    }
+
+
+    .titles .items
+    {
+        font-size: 22px;
+
+        width: 436px;
+    }
+
+
+    .titles .items > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-----------
+        Start
+    -----------*/
+    .start .block_title
+    {
+        margin-bottom: 32px;
+    }
+
+    .start .block_title > *
+    {
+        display: inline;
+    }
+
+    .start .block_title span
+    {
+        margin-left: 0;
+    }
+
+
+    .start .steps .title
+    {
+        font-size: 18px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .start .steps .data
+    {
+        width: 260px;
+        margin-right: 0;
+    }
+
+
+    .start .steps ul li
+    {
+        font-size: 16px;
+    }
+
+    .start .steps ul li:before
+    {
+        top: 9px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head .images
+    {
+        width: 320px;
+    }
+
+
+    .article_info .head .text_block
+    {
+        width: calc(100% - 344px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .desc,
+    .contacts_info .location
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .data
+    {
+        float: none;
+
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .contacts_info .data > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .contacts_info .data .icon
+    {
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+    }
+
+
+    .contacts_info .map
+    {
+        float: none;
+
+        width: 100%;
+        height: auto;
+        margin-top: 32px;
+        padding-bottom: 75%;
+    }
+
+
+    .contacts_info .feedback
+    {
+        float: none;
+
+        width: 100%;
+        margin-top: 50px;
+
+        order: 3;
+    }
+
+
+    .contacts_info .feedback .title
+    {
+        text-align: center;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .list > * + *
+    {
+        margin-top: 28px;
+    }
+
+
+    .files .file .icon
+    {
+        width: 26px;
+        height: 30px;
+    }
+
+
+    .files .file span
+    {
+        width: calc(100% - 40px);
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .slogan
+    {
+        font-size: 22px;
+    }
+
+
+
+    .delivery_info .transport
+    {
+        margin-top: 50px;
+    }
+
+
+
+    .delivery_info .methods
+    {
+        margin-top: 50px;
+    }
+
+
+    .delivery_info .methods .title
+    {
+        font-size: 22px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .delivery_info .methods .list > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+    .delivery_info .methods .logo
+    {
+        margin-bottom: 20px;
+    }
+
+    .delivery_info .methods .logo img
+    {
+        max-height: 90px;
+    }
+
+
+
+    /*---------------------
+        Delivery banner
+    ---------------------*/
+    .delivery_banner .data
+    {
+        padding: 48px 40px;
+    }
+
+
+    .delivery_banner .info
+    {
+        width: 348px;
+    }
+
+
+    .delivery_banner .title
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .image
+    {
+        width: 320px;
+        height: 448px;
+    }
+
+
+    .services .data
+    {
+        width: calc(100% - 344px);
+    }
+
+
+    .services .service + .service
+    {
+        margin-top: 32px;
+    }
+
+
+    .services .service .name
+    {
+        font-size: 22px;
+    }
+
+
+    .services .service .desc
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*----------------
+        Production
+    ----------------*/
+    .production .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data
+    {
+        width: calc(100% - 344px);
+    }
+
+
+    .product_info .data .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    .product_info .description
+    {
+        margin-top: 40px;
+        padding: 24px 30px;
+    }
+
+
+
+    .product_info .benefits .title
+    {
+        font-size: 22px;
+    }
+
+
+    .product_info .benefits .text_block ol li + li
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-------------------
+        Product order
+    -------------------*/
+    .product_order .title
+    {
+        font-size: 22px;
+    }
+
+
+    .product_order .contacts
+    {
+        width: 280px;
+    }
+
+    .product_order .contacts > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .product_order .contacts .icon
+    {
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+    }
+
+
+    .product_order .form
+    {
+        width: calc(100% - 320px);
+        margin-left: auto;
+    }
+
+
+
+    /*-------------------
+        Product files
+    -------------------*/
+    .product_files .description
+    {
+        margin-bottom: 32px;
+        padding: 24px 30px;
+    }
+
+
+    .product_files .file .icon + *
+    {
+        width: 164px;
+    }
+
+
+
+    /*----------------
+        About data
+    ----------------*/
+    .about_data .bottom
+    {
+        margin-top: 48px;
+        padding: 40px 24px;
+    }
+
+
+    .about_data .bottom .text_block
+    {
+        width: 440px;
+    }
+
+    .about_data .bottom .text_block > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*------------------
+        Main clients
+    ------------------*/
+    .main_clients .desc
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .main_clients .image
+    {
+        width: 320px;
+        height: 308px;
+    }
+
+
+    .main_clients .image + .text_block
+    {
+        width: calc(100% - 344px);
+    }
+
+
+    .main_clients .bottom
+    {
+        margin-top: 32px;
+        padding: 24px 30px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .advantages .desc
+    {
+        font-size: 22px;
+
+        padding-left: 140px;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 120px;
+    }
+
+
+    .advantages .item .number
+    {
+        font-size: 108px;
+    }
+
+
+
+    /*-------------
+        Objects
+    -------------*/
+    .objects .object .thumb
+    {
+        height: 240px;
+    }
+
+
+    .objects .object .info
+    {
+        padding: 16px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .order
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+}

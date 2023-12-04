@@ -1,0 +1,718 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 38px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 68px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 42px;
+        height: 12px;
+        margin-bottom: 12px;
+    }
+
+    .swiper-button-next
+    {
+        left: 60px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .contacts
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title span
+    {
+        margin-left: 70px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .block_head .title > *:nth-child(2)
+    {
+        padding-left: 40px;
+    }
+
+    .block_head .title > *:nth-child(3)
+    {
+        padding-left: 80px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .first_section .cont
+    {
+        padding-bottom: 48px;
+    }
+
+
+    .first_section .block_title > *
+    {
+        display: inline;
+    }
+
+    .first_section .block_title > *:nth-child(2),
+    .first_section .block_title > *:nth-child(3)
+    {
+        padding-left: 0;
+    }
+
+    .first_section .block_title span
+    {
+        margin: 0;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .title
+    {
+        font-size: 20px;
+    }
+
+
+    .about_info .link .icon
+    {
+        width: 42px;
+        height: 12px;
+        margin-left: 12px;
+    }
+
+
+
+    /*------------
+        Titles
+    ------------*/
+    .titles
+    {
+        padding: 60px 0;
+    }
+
+
+    .titles .items
+    {
+        font-size: 20px;
+
+        width: 100%;
+    }
+
+
+    .titles .bg
+    {
+        display: none;
+    }
+
+
+
+    /*-----------
+        Start
+    -----------*/
+    .start .block_title
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .start .steps .title
+    {
+        font-size: 16px;
+    }
+
+
+    .start .steps .data
+    {
+        width: 100%;
+    }
+
+
+    .start .steps ul li
+    {
+        font-size: 15px;
+    }
+
+    .start .steps ul li:before
+    {
+        top: 8px;
+    }
+
+
+
+    /*--------------
+        Gallery
+    --------------*/
+    .gallery .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .block_title
+    {
+        font-size: 20px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .projects .swiper-slide
+    {
+        width: 280px;
+    }
+
+
+    .projects .row
+    {
+        max-width: 100%;
+        margin-bottom: -24px;
+        margin-left: 0;
+    }
+
+    .projects .row > *
+    {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+
+    .projects .project .thumb
+    {
+        background-size: 72px auto;
+    }
+
+
+    .projects .project .link .icon
+    {
+        width: 42px;
+        height: 12px;
+        margin-left: 12px;
+    }
+
+
+    .projects .more_btn
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head .images
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .article_info .head .thumb
+    {
+        background-size: 72px auto;
+    }
+
+
+    .article_info .head .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .slogan
+    {
+        font-size: 18px;
+    }
+
+
+
+    .delivery_info .methods .title
+    {
+        font-size: 18px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*---------------
+        Transport
+    ---------------*/
+    .transport .row
+    {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .transport .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .transport .item .thumb
+    {
+        margin-bottom: 8px;
+    }
+
+
+
+    /*---------------------
+        Delivery banner
+    ---------------------*/
+    .delivery_banner
+    {
+        padding: 0;
+    }
+
+
+    .delivery_banner .data
+    {
+        width: calc(100% + 48px);
+        min-height: 445px;
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 40px 24px;
+    }
+
+
+    .delivery_banner .info
+    {
+        width: 100%;
+    }
+
+
+    .delivery_banner .title
+    {
+        font-size: 22px;
+    }
+
+
+    .delivery_banner .link .icon
+    {
+        width: 42px;
+        height: 12px;
+        margin-left: 12px;
+    }
+
+
+    .delivery_banner .data:before
+    {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        content: '';
+
+        background: linear-gradient(169deg, #1a1a1a 49.24%, rgba(26, 26, 26, .00) 93.82%);
+    }
+
+
+    .delivery_banner .bg
+    {
+        object-position: 0 0;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .image
+    {
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+        padding-bottom: 128.57%;
+
+        order: 2;
+    }
+
+
+    .services .data
+    {
+        width: 100%;
+    }
+
+
+    .services .service + .service
+    {
+        margin-top: 30px;
+    }
+
+
+    .services .service .name
+    {
+        font-size: 20px;
+    }
+
+
+    .services .service .desc
+    {
+        margin-top: 4px;
+    }
+
+
+
+    /*----------------
+        Production
+    ----------------*/
+    .production .row
+    {
+        margin-bottom: -24px;
+        margin-left: -12px;
+    }
+
+    .production .row > *
+    {
+        width: calc(50% - 12px);
+        margin-bottom: 24px;
+        margin-left: 12px;
+    }
+
+
+    .production .item .thumb
+    {
+        margin-bottom: 8px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .product_info .data
+    {
+        width: 100%;
+    }
+
+
+    .product_info .data .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    .product_info .description
+    {
+        margin-top: 32px;
+        padding: 20px 24px;
+    }
+
+
+
+    .product_info .benefits .title
+    {
+        font-size: 20px;
+    }
+
+
+    .product_info .benefits .text_block ol li + li
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*-------------------
+        Product order
+    -------------------*/
+    .product_order .title
+    {
+        font-size: 20px;
+    }
+
+
+    .product_order .contacts
+    {
+        width: 100%;
+    }
+
+    .product_order .form
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+
+    /*-------------------
+        Product files
+    -------------------*/
+    .product_files .description
+    {
+        margin-bottom: 24px;
+        padding: 20px 24px;
+    }
+
+
+    .product_files .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .product_files .file .icon
+    {
+        width: 40px;
+        height: 52px;
+        margin-right: 16px;
+    }
+
+
+    .product_files .file .icon + *
+    {
+        width: calc(100% - 56px);
+        max-width: calc(100% - 56px);
+    }
+
+
+
+    /*----------------
+        About data
+    ----------------*/
+    .about_data .desc br
+    {
+        display: none;
+    }
+
+
+    .about_data .bottom
+    {
+        width: calc(100% + 48px);
+        margin-top: 32px;
+        margin-right: -24px;
+        margin-left: -24px;
+    }
+
+
+    .about_data .bottom .text_block
+    {
+        width: 100%;
+    }
+
+    .about_data .bottom .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------------
+        Main clients
+    ------------------*/
+    .main_clients .desc
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .main_clients .image
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 75%;
+    }
+
+
+    .main_clients .image + .text_block
+    {
+        width: 100%;
+    }
+
+    .main_clients .image + .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .main_clients .bottom
+    {
+        width: calc(100% + 48px);
+        margin-top: 24px;
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 20px 24px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .desc
+    {
+        font-size: 18px;
+
+        padding-left: 0;
+    }
+
+
+    .advantages .row
+    {
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+    .advantages .row > *
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 100px;
+    }
+
+
+    .advantages .item .number
+    {
+        font-size: 92px;
+    }
+
+
+
+    /*-------------
+        Objects
+    -------------*/
+    .objects .object .thumb
+    {
+        height: 200px;
+    }
+
+
+    .objects .object .info
+    {
+        padding: 12px;
+    }
+
+
+    .objects .swiper-button-prev
+    {
+        left: 12px;
+    }
+
+    .objects .swiper-button-next
+    {
+        right: 12px;
+    }
+
+
+    .objects ol
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-top: 68px;
+    }
+
+
+    footer .menu
+    {
+        display: none;
+    }
+
+
+    footer .order
+    {
+        margin-top: 40px;
+    }
+}

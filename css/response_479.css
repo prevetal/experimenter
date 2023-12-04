@@ -1,0 +1,454 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 26px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding: 17px 0;
+    }
+
+
+    .mob_header .logo img
+    {
+        height: 24px;
+    }
+
+    .mob_header .logo img + img
+    {
+        height: 13px;
+        margin-left: 5px;
+    }
+
+
+    .mob_header .logo .slogan
+    {
+        font-size: 10px;
+
+        top: 16px;
+        right: 15px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .page_title
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title > *:nth-child(2)
+    {
+        padding-left: 24px;
+    }
+
+    .block_head .title > *:nth-child(3)
+    {
+        padding-left: 48px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .cols
+    {
+        margin-left: 0;
+    }
+
+    .form .cols .col
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .form textarea
+    {
+        height: 125px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        padding-bottom: 34px;
+    }
+
+
+    .first_section .form .submit
+    {
+        order: 2;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .title
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*------------
+        Titles
+    ------------*/
+    .titles
+    {
+        padding: 48px 0;
+    }
+
+
+    .titles .items
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-----------
+        Start
+    -----------*/
+    .start .block_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .start .steps .title
+    {
+        font-size: 15px;
+    }
+
+
+    .start .steps ul li
+    {
+        font-size: 14px;
+    }
+
+    .start .steps ul li:before
+    {
+        top: 7px;
+    }
+
+
+
+    /*--------------
+        Gallery
+    --------------*/
+    .gallery .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .swiper-slide
+    {
+        width: 252px;
+    }
+
+
+    .projects .row
+    {
+        margin-bottom: -20px;
+    }
+
+    .projects .row > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .projects .more_btn
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .feedback .form .submit
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------
+        Transport
+    ---------------*/
+    .transport .row
+    {
+        margin-bottom: -20px;
+    }
+
+    .transport .row > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*---------------------
+        Delivery banner
+    ---------------------*/
+    .delivery_banner .data
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 40px 20px;
+    }
+
+
+
+    .delivery_banner .title
+    {
+        font-size: 18px;
+    }
+
+
+    .delivery_banner .link
+    {
+        margin-top: 28px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .image
+    {
+        margin-top: 20px;
+    }
+
+
+    .services .service .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*----------------
+        Production
+    ----------------*/
+    .production .row
+    {
+        margin-bottom: -30px;
+        margin-left: 0;
+    }
+
+    .production .row > *
+    {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .description
+    {
+        width: calc(100% + 40px);
+        margin: 30px -20px 0;
+        padding: 20px;
+    }
+
+
+
+    .product_info .benefits .title
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        Product order
+    -------------------*/
+    .product_order .title
+    {
+        font-size: 18px;
+    }
+
+
+    .product_order .form .submit
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Product files
+    -------------------*/
+    .product_files .description
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px 30px;
+        padding: 20px;
+    }
+
+
+    .product_files .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+    .product_files .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .product_files .file br
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item
+    {
+        min-height: 160px;
+        padding: 20px 48px 20px 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-top: 60px;
+    }
+
+
+    footer .contacts,
+    footer .location
+    {
+        width: 100%;
+        margin-bottom: 30px;
+
+        text-align: center;
+    }
+
+
+    footer .order
+    {
+        margin-top: 0;
+    }
+
+
+    footer .order .desc
+    {
+        text-align: center;
+    }
+
+    footer .order .desc br ~ br
+    {
+        display: none;
+    }
+
+
+    footer .copyright
+    {
+        font-size: 10px;
+    }
+}
