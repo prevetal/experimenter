@@ -114,14 +114,12 @@ input[type=number]
 ::selection
 {
     color: #fff;
-
     background: #ff1919;
 }
 
 ::-moz-selection
 {
     color: #fff;
-
     background: #ff1919;
 }
 
@@ -173,13 +171,14 @@ html.custom_scroll
 
 body
 {
-    color: var(--text_color);
     font: var(--font_size) var(--font_family);
 
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    color: var(--text_color);
 }
 
 body.menu_open
@@ -190,7 +189,6 @@ body.menu_open
 
 button
 {
-    color: inherit;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -201,6 +199,7 @@ button
     cursor: pointer;
     vertical-align: top;
 
+    color: inherit;
     border: none;
     background: none;
 }
@@ -225,9 +224,8 @@ button
 .main
 {
     display: flex;
-    flex-direction: column;
-
     flex: 1 0 auto;
+    flex-direction: column;
 }
 
 
@@ -258,11 +256,10 @@ button
 .row
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -306,22 +303,20 @@ button
 
 .buttonUp .btn
 {
-    color: #fff;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 62px;
     height: 62px;
 
     transition: background .2s linear;
 
+    color: #fff;
     border-radius: 50%;
     background: #ae0b05;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -357,31 +352,33 @@ header
 
 header.absolute
 {
-    color: #fff;
-
     position: absolute;
 
     margin: 0;
+
+    color: #fff;
 }
 
 
 
 header .cont
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 
 header .logo
 {
-    color: currentColor;
-
     position: relative;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     width: 310px;
     height: 57px;
@@ -389,10 +386,7 @@ header .logo
 
     text-decoration: none;
 
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
@@ -437,10 +431,10 @@ header .contacts .email
 
 header .contacts .email a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -464,32 +458,32 @@ header .contacts .phone
 
 header .contacts .phone a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
 header .contacts .phone .icon
 {
-    color: #f10003;
-
     display: none;
 
     width: 15px;
     height: 15px;
     margin-right: 8px;
+
+    color: #f10003;
 }
 
 
 
 header .menu
 {
+    justify-content: center;
+
     width: 100%;
     margin-top: 28px;
-
-    justify-content: center;
 }
 
 
@@ -501,7 +495,6 @@ header .menu_item + .menu_item
 
 header .menu_item > a
 {
-    color: currentColor;
     font-size: 16px;
     font-weight: 600;
 
@@ -509,6 +502,8 @@ header .menu_item > a
 
     text-decoration: none;
     text-transform: uppercase;
+
+    color: currentColor;
 }
 
 
@@ -538,37 +533,35 @@ header .menu_item > a.active
 
 .mob_header.absolute
 {
-    color: #fff;
-
     position: absolute;
 
+    color: #fff;
     background: none;
 }
 
 
 .mob_header .cont
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 
 .mob_header .logo
 {
-    color: currentColor;
-
     position: relative;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     text-decoration: none;
 
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
@@ -612,10 +605,10 @@ header .menu_item > a.active
 
 .mob_header .contacts .phone a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -623,15 +616,14 @@ header .menu_item > a.active
 .mob_header .mob_menu_btn
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 35px;
     height: 21px;
     margin-left: 32px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -658,16 +650,17 @@ header .menu_item > a.active
 
 .breadcrumbs
 {
-    color: #a3a3a3;
     line-height: 145.187%;
+
+    color: #a3a3a3;
 }
 
 
 .breadcrumbs a
 {
-    color: currentColor;
-
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -777,9 +770,8 @@ header .menu_item > a.active
 
 .form ::-moz-placeholder
 {
-    color: var(--form_placeholder_color);
-
     opacity: 1;
+    color: var(--form_placeholder_color);
 }
 
 .form :-ms-input-placeholder
@@ -791,13 +783,12 @@ header .menu_item > a.active
 .form .cols
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: -14px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .form .cols .col
@@ -810,14 +801,14 @@ header .menu_item > a.active
 .form .columns
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: calc(var(--form_columns_offset) * -1);
 
     --form_columns_offset: 11px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .form .columns > *
@@ -841,7 +832,6 @@ header .menu_item > a.active
 
 .form .input
 {
-    color: var(--text_color);
     font-family: var(--font_family);
     font-size: 14px;
 
@@ -853,6 +843,7 @@ header .menu_item > a.active
 
     transition: border-color .2s linear;
 
+    color: var(--text_color);
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -866,7 +857,6 @@ header .menu_item > a.active
 
 .form textarea
 {
-    color: var(--text_color);
     font-family: var(--font_family);
     font-size: 14px;
 
@@ -879,6 +869,7 @@ header .menu_item > a.active
     resize: none;
     transition: border-color .2s linear;
 
+    color: var(--text_color);
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -900,32 +891,32 @@ header .menu_item > a.active
 
 .form .file label
 {
-    color: #9e9e9e;
     font-size: 14px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 55px;
     padding: 11px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #9e9e9e;
 }
 
 
 .form .file label .icon
 {
-    color: #414141;
-
     display: block;
 
     width: 30px;
     height: 30px;
     margin-right: 11px;
+
+    color: #414141;
 }
 
 
@@ -954,18 +945,18 @@ header .menu_item > a.active
 
 .form .agree
 {
-    color: #9e9e9e;
     font-size: 10px;
 
     width: 300px;
     max-width: 100%;
     margin-top: 10px;
+
+    color: #9e9e9e;
 }
 
 
 .form .submit_btn
 {
-    color: #fff;
     font-size: 16px;
     font-weight: 600;
 
@@ -976,6 +967,7 @@ header .menu_item > a.active
 
     text-transform: uppercase;
 
+    color: #fff;
     border-radius: 5px;
     background: #ff1919;
 }
@@ -1148,11 +1140,12 @@ header .menu_item > a.active
 
 .first_section .block_title
 {
-    color: #fff;
     font-size: var(--font_size_title);
     font-weight: 400;
 
     text-transform: uppercase;
+
+    color: #fff;
 }
 
 
@@ -1189,22 +1182,22 @@ header .menu_item > a.active
 
 .first_section .form .title
 {
-    color: #fff;
     font-size: 16px;
     font-weight: 600;
 
     margin-bottom: 9px;
 
     text-transform: uppercase;
+
+    color: #fff;
 }
 
 
 .first_section .form .file label
 {
-    color: #9e9e9e;
-
     padding: 0 20px;
 
+    color: #9e9e9e;
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
 }
@@ -1212,11 +1205,11 @@ header .menu_item > a.active
 
 .first_section .form .file label .icon
 {
-    color: currentColor;
-
     width: 21px;
     height: 21px;
     margin-right: 8px;
+
+    color: currentColor;
 }
 
 
@@ -1241,12 +1234,12 @@ header .menu_item > a.active
 
 .projects .block_title a
 {
-    color: currentColor;
-
     display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -1296,11 +1289,11 @@ header .menu_item > a.active
 
 .projects .project
 {
-    color: currentColor;
-
     display: block;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -1355,15 +1348,14 @@ header .menu_item > a.active
     font-weight: 600;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 23px;
 
     text-transform: uppercase;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -1395,13 +1387,12 @@ header .menu_item > a.active
 .article_info .head
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-bottom: 47px;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
@@ -1457,36 +1448,36 @@ header .menu_item > a.active
 
 .files .file
 {
-    color: currentColor;
     font-weight: 700;
     line-height: 145.187%;
 
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
+
+    color: currentColor;
 }
 
 
 .files .file .icon
 {
-    color: #e1e1e1;
-
     display: block;
 
     width: 32px;
     height: 37px;
+
+    color: #e1e1e1;
 }
 
 
 .files .file span
 {
+    align-self: center;
+
     width: calc(100% - 50px);
     margin-left: auto;
-
-    align-self: center;
 }
 
 
@@ -1505,11 +1496,10 @@ header .menu_item > a.active
     line-height: 145.187%;
 
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -1542,11 +1532,10 @@ header .menu_item > a.active
 .contacts_info .data > *
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .contacts_info .data > * + *
@@ -1557,26 +1546,27 @@ header .menu_item > a.active
 
 .contacts_info .data .icon
 {
-    color: #f10003;
-
     display: block;
 
     width: 21px;
     height: 21px;
     margin-right: 15px;
+
+    color: #f10003;
 }
 
 
 .contacts_info .data a
 {
-    color: currentColor;
     font-weight: 700;
+
+    align-self: center;
 
     max-width: calc(100% - 36px);
 
     white-space: nowrap;
 
-    align-self: center;
+    color: currentColor;
 }
 
 
@@ -1694,13 +1684,13 @@ header .menu_item > a.active
 ---------------*/
 .transport .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     width: 984px;
     max-width: calc(100% + 42px);
     margin-bottom: -12px;
     margin-left: -42px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .transport .row > *
@@ -1713,12 +1703,12 @@ header .menu_item > a.active
 
 .transport .item
 {
-    color: currentColor;
-
     display: flex;
     flex-direction: column;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -1751,11 +1741,11 @@ header .menu_item > a.active
 
 .transport .item .info
 {
+    flex: 1 0 auto;
+
     padding: 11px 16px;
 
     background: #f2f2f2;
-
-    flex: 1 0 auto;
 }
 
 
@@ -1784,13 +1774,12 @@ header .menu_item > a.active
 
 .delivery_banner .data
 {
-    color: #fff;
-
     position: relative;
     z-index: 3;
 
     padding: 79px 66px;
 
+    color: #fff;
     background: #ddd;
 }
 
@@ -1835,31 +1824,30 @@ header .menu_item > a.active
 .delivery_banner .link
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 14px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .delivery_banner .link a
 {
-    color: currentColor;
     font-size: 16px;
     font-weight: 600;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
     text-transform: uppercase;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
@@ -1952,7 +1940,6 @@ header .menu_item > a.active
 
 .production .item
 {
-    color: currentColor;
     font-weight: 700;
     line-height: 145.187%;
 
@@ -1960,6 +1947,8 @@ header .menu_item > a.active
 
     text-align: center;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -2128,11 +2117,10 @@ header .menu_item > a.active
 .product_order .contacts > *
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .product_order .contacts > * + *
@@ -2143,26 +2131,27 @@ header .menu_item > a.active
 
 .product_order .contacts .icon
 {
-    color: #f10003;
-
     display: block;
 
     width: 21px;
     height: 21px;
     margin-right: 15px;
+
+    color: #f10003;
 }
 
 
 .product_order .contacts a
 {
-    color: currentColor;
     font-weight: 700;
+
+    align-self: center;
 
     max-width: calc(100% - 36px);
 
     white-space: nowrap;
 
-    align-self: center;
+    color: currentColor;
 }
 
 
@@ -2209,32 +2198,31 @@ header .menu_item > a.active
 
 .product_files .file
 {
-    color: currentColor;
     line-height: 145.187%;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
 .product_files .file .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 49px;
     height: 63px;
     margin-right: 22px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_files .file .icon img
@@ -2247,10 +2235,10 @@ header .menu_item > a.active
 
 .product_files .file .icon + *
 {
+    align-self: center;
+
     width: 180px;
     max-width: calc(100% - 71px);
-
-    align-self: center;
 }
 
 
@@ -2260,9 +2248,10 @@ header .menu_item > a.active
 ----------------*/
 .about_info .title
 {
-    color: #787878;
     font-size: 32px;
     line-height: 145.187%;
+
+    color: #787878;
 }
 
 .about_info .title span
@@ -2284,31 +2273,30 @@ header .menu_item > a.active
 .about_info .link
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 36px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .about_info .link a
 {
-    color: currentColor;
     font-size: 16px;
     font-weight: 600;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
     text-transform: uppercase;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
@@ -2381,12 +2369,13 @@ header .menu_item > a.active
 
 .titles .items
 {
-    color: #6d6d6d;
     font-size: 32px;
 
     width: 713px;
     max-width: 100%;
     margin-left: auto;
+
+    color: #6d6d6d;
 }
 
 
@@ -2537,8 +2526,6 @@ header .menu_item > a.active
 
 .gallery .image
 {
-    color: currentColor;
-
     position: relative;
 
     display: block;
@@ -2548,6 +2535,7 @@ header .menu_item > a.active
 
     text-decoration: none;
 
+    color: currentColor;
     background: #ddd;
 }
 
@@ -2575,8 +2563,6 @@ header .menu_item > a.active
 .gallery .swiper-button-next,
 .gallery .swiper-button-prev
 {
-    color: #fff;
-
     top: auto;
     bottom: 0;
 
@@ -2584,6 +2570,7 @@ header .menu_item > a.active
     height: 26px;
     margin: 0;
 
+    color: #fff;
     border-radius: 50%;
     background: #000;
 }
@@ -2665,15 +2652,14 @@ header .menu_item > a.active
     left: 0;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
     padding: 20px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .partners .logo img
@@ -2694,8 +2680,6 @@ header .menu_item > a.active
 .partners .swiper-button-next,
 .partners .swiper-button-prev
 {
-    color: #fff;
-
     top: auto;
     bottom: 0;
 
@@ -2703,6 +2687,7 @@ header .menu_item > a.active
     height: 26px;
     margin: 0;
 
+    color: #fff;
     border-radius: 50%;
     background: #000;
 }
@@ -2751,14 +2736,13 @@ header .menu_item > a.active
 
 .about_data .bottom
 {
-    color: #fff;
-
     position: relative;
     z-index: 3;
 
     margin-top: 69px;
     padding: 75px 93px;
 
+    color: #fff;
     background: #1a1a1a;
 }
 
@@ -2894,13 +2878,13 @@ header .menu_item > a.active
 
 .advantages .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -20px;
     margin-left: -20px;
 
     counter-reset: number;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 
@@ -2925,17 +2909,16 @@ header .menu_item > a.active
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 153px;
     padding: 28px;
 
     border-radius: 5px;
     background: #f2f2f2;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .advantages .item:before
@@ -2968,7 +2951,6 @@ header .menu_item > a.active
 
 .advantages .item .number
 {
-    color: #e1e1e1;
     font-size: 128px;
     line-height: 145.187%;
 
@@ -2978,6 +2960,8 @@ header .menu_item > a.active
     right: 13px;
 
     transform: translateY(-50%);
+
+    color: #e1e1e1;
 }
 
 .advantages .item .number:before
@@ -3028,8 +3012,6 @@ header .menu_item > a.active
 .objects .swiper-button-next,
 .objects .swiper-button-prev
 {
-    color: #000;
-
     top: 0;
     bottom: auto;
 
@@ -3037,6 +3019,7 @@ header .menu_item > a.active
     height: 26px;
     margin: -13px 0 0;
 
+    color: #000;
     border-radius: 50%;
     background: #fff;
 }
@@ -3070,11 +3053,11 @@ header .menu_item > a.active
 
 .objects .object
 {
-    color: currentColor;
-
     display: block;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -3164,10 +3147,9 @@ header .menu_item > a.active
 ------------*/
 footer
 {
-    color: #fff;
-
     padding: 92px 0;
 
+    color: #fff;
     background: #000;
 }
 
@@ -3200,10 +3182,10 @@ footer .contacts > * + *
 
 footer .contacts a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -3234,12 +3216,12 @@ footer .menu > * + *
 
 footer .menu a
 {
-    color: currentColor;
-
     display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
