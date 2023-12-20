@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		el.classList.add('gallery_s' + i)
 
 		let options = {
-			loop: true,
+			loop: false,
 			speed: 500,
 			autoplay: {
 				delay: 3000,
@@ -88,8 +88,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				loadOnTransitionStart: true,
 				loadPrevNext: true
 			},
-			spaceBetween: 0,
-			slidesPerView: 1
+			spaceBetween: 20,
+			slidesPerView: 'auto'
 		}
 
 		gallerySliders.push(new Swiper('.gallery_s' + i, options))
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		el.classList.add('objects_s' + i)
 
 		let options = {
-			loop: true,
+			loop: false,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -120,63 +120,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				loadOnTransitionStart: true,
 				loadPrevNext: true
 			},
-			spaceBetween: 0,
-			slidesPerView: 1,
-			on: {
-				init: swiper => {
-					setTimeout(() => {
-						$(swiper.$el).find('.swiper-button-next, .swiper-button-prev').css(
-							'top', $(swiper.$el).find('.thumb').outerHeight() * 0.5
-						)
-					})
-				},
-				resize: swiper => {
-					setTimeout(() => {
-						$(swiper.$el).find('.swiper-button-next, .swiper-button-prev').css(
-							'top', $(swiper.$el).find('.thumb').outerHeight() * 0.5
-						)
-					})
-				}
-			}
+			spaceBetween: 20,
+			slidesPerView: 'auto'
 		}
 
 		objectsSliders.push(new Swiper('.objects_s' + i, options))
-	})
-
-
-	// Галерея
-	const partnersSliders = [],
-		partners = document.querySelectorAll('.partners .swiper')
-
-	partners.forEach(function (el, i) {
-		el.classList.add('partners_s' + i)
-
-		let options = {
-			loop: true,
-			speed: 500,
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false
-			},
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			preloadImages: false,
-			lazy: {
-				enabled: true,
-				checkInView: true,
-				loadOnTransitionStart: true,
-				loadPrevNext: true
-			},
-			spaceBetween: 0,
-			slidesPerView: 1
-		}
-
-		partnersSliders.push(new Swiper('.partners_s' + i, options))
 	})
 
 
@@ -299,4 +247,60 @@ document.addEventListener('DOMContentLoaded', function () {
 			el.addEventListener('change', () => el.closest('.file').querySelector('label span').innerText = el.value)
 		})
 	}
+
+
+	// Партнёры
+	initPartnersSliders()
 })
+
+
+
+window.addEventListener('resize', () => {
+	// Партнёры
+	initPartnersSliders()
+})
+
+
+
+// Партнёры
+partnersSliders = []
+
+function initPartnersSliders() {
+	if ($(window).width() < 768) {
+		if ($('.partners .row').length) {
+			$('.partners .row > *').addClass('swiper-slide')
+			$('.partners .row').addClass('swiper-wrapper').removeClass('row')
+
+			$('.partners .swiper').each(function (i) {
+				$(this).addClass('partners_s' + i)
+
+				let options = {
+					loop: true,
+					speed: 500,
+					autoplay: {
+						delay: 3000,
+						disableOnInteraction: false
+					},
+					watchSlidesProgress: true,
+					slideActiveClass: 'active',
+					slideVisibleClass: 'visible',
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+					spaceBetween: 0,
+					slidesPerView: 1
+				}
+
+				partnersSliders.push(new Swiper('.partners_s' + i, options))
+			})
+		}
+	} else {
+		partnersSliders.forEach(element => element.destroy(true, true))
+
+		partnersSliders = []
+
+		$('.partners .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.partners .row > *').removeClass('swiper-slide')
+	}
+}

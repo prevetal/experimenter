@@ -305,12 +305,6 @@
     /*--------------
         Gallery
     --------------*/
-    .gallery .data
-    {
-        width: calc(50% - 12px);
-    }
-
-
     .gallery .title
     {
         font-size: var(--font_size);
@@ -321,12 +315,6 @@
     /*--------------
         Partners
     --------------*/
-    .partners .data
-    {
-        width: calc(50% - 12px);
-    }
-
-
     .partners .title
     {
         font-size: var(--font_size);
@@ -861,17 +849,6 @@
     /*-------------
         Objects
     -------------*/
-    .objects .swiper-button-prev
-    {
-        left: 24px;
-    }
-
-    .objects .swiper-button-next
-    {
-        right: 24px;
-    }
-
-
     .objects .object .thumb
     {
         height: 280px;

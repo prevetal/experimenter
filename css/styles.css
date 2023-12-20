@@ -2399,12 +2399,6 @@ header .menu_item > a.active
 /*-----------
     Start
 -----------*/
-.start
-{
-    margin-bottom: 49px;
-}
-
-
 .start .block_title
 {
     font-size: var(--font_size_title);
@@ -2498,19 +2492,6 @@ header .menu_item > a.active
 /*--------------
     Gallery
 --------------*/
-.gallery
-{
-    margin-bottom: 30px;
-}
-
-
-.gallery .data
-{
-    width: 530px;
-    max-width: 100%;
-}
-
-
 .gallery .title
 {
     font-size: 16px;
@@ -2518,7 +2499,7 @@ header .menu_item > a.active
 
     width: 360px;
     max-width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 
     text-transform: uppercase;
 }
@@ -2556,15 +2537,23 @@ header .menu_item > a.active
 
 .gallery .swiper
 {
-    padding-bottom: 38px;
+    overflow: visible !important;
+
+    padding-top: 50px;
+}
+
+
+.gallery .swiper-slide
+{
+    width: 435px;
 }
 
 
 .gallery .swiper-button-next,
 .gallery .swiper-button-prev
 {
-    top: auto;
-    bottom: 0;
+    top: 0;
+    bottom: auto;
 
     width: 26px;
     height: 26px;
@@ -2577,17 +2566,15 @@ header .menu_item > a.active
 
 .gallery .swiper-button-prev
 {
-    left: 50%;
-
-    margin-left: -32px;
+    left: 0;
 }
 
 .gallery .swiper-button-next
 {
-    right: 50%;
-    left: auto;
+    right: auto;
+    left: 39px;
 
-    margin-right: -32px;
+    margin-right: 0;
 }
 
 
@@ -2610,19 +2597,6 @@ header .menu_item > a.active
 /*--------------
     Partners
 --------------*/
-.partners .data
-{
-    width: 530px;
-    max-width: 100%;
-    margin-left: auto;
-}
-
-.partners .data.center
-{
-    margin-right: auto;
-}
-
-
 .partners .title
 {
     font-size: 16px;
@@ -2630,7 +2604,7 @@ header .menu_item > a.active
 
     width: 360px;
     max-width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 
     text-transform: uppercase;
 }
@@ -2673,7 +2647,7 @@ header .menu_item > a.active
 
 .partners .swiper
 {
-    padding-bottom: 38px;
+    overflow: visible !important;
 }
 
 
@@ -2683,8 +2657,10 @@ header .menu_item > a.active
     top: auto;
     bottom: 0;
 
-    width: 26px;
-    height: 26px;
+    display: none;
+
+    width: 55px;
+    height: 55px;
     margin: 0;
 
     color: #fff;
@@ -2696,7 +2672,7 @@ header .menu_item > a.active
 {
     left: 50%;
 
-    margin-left: -32px;
+    margin-left: -68px;
 }
 
 .partners .swiper-button-next
@@ -2704,15 +2680,15 @@ header .menu_item > a.active
     right: 50%;
     left: auto;
 
-    margin-right: -32px;
+    margin-right: -68px;
 }
 
 
 .partners .swiper-button-next .icon,
 .partners .swiper-button-prev .icon
 {
-    width: 7px;
-    height: 12px;
+    width: 14px;
+    height: 24px;
 
     transform: none;
 }
@@ -2720,6 +2696,41 @@ header .menu_item > a.active
 .partners .swiper-button-next .icon
 {
     transform: rotate(180deg);
+}
+
+
+.partners .row
+{
+    margin-bottom: -20px;
+    margin-left: -20px;
+}
+
+.partners .row > *
+{
+    width: calc(14.285% - 20px);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+.partners .item
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 95px;
+}
+
+
+.partners .item img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -2984,28 +2995,14 @@ header .menu_item > a.active
 .objects .swiper
 {
     overflow: visible !important;
+
+    padding-top: 50px;
 }
 
 
 .objects .swiper-slide
 {
-    position: relative;
-
-    visibility: hidden;
-
-    transition: opacity .2s linear, visibility .2s linear;
-    pointer-events: none;
-
-    opacity: 0;
-}
-
-.objects .swiper-slide.visible
-{
-    visibility: visible;
-
-    pointer-events: auto;
-
-    opacity: 1;
+    width: 435px;
 }
 
 
@@ -3017,22 +3014,24 @@ header .menu_item > a.active
 
     width: 26px;
     height: 26px;
-    margin: -13px 0 0;
+    margin: 0;
 
-    color: #000;
+    color: #fff;
     border-radius: 50%;
-    background: #fff;
+    background: #000;
 }
 
 .objects .swiper-button-prev
 {
-    left: 41px;
+    left: 0;
 }
 
 .objects .swiper-button-next
 {
-    right: 41px;
-    left: auto;
+    right: auto;
+    left: 39px;
+
+    margin-right: 0;
 }
 
 

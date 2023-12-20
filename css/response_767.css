@@ -194,9 +194,50 @@
     /*--------------
         Gallery
     --------------*/
-    .gallery .data
+    .gallery .swiper
     {
-        width: 100%;
+        padding-top: 0;
+        padding-bottom: 85px;
+    }
+
+
+    .gallery .swiper-slide
+    {
+        width: calc(100vw - 48px);
+    }
+
+
+    .gallery .swiper-button-next,
+    .gallery .swiper-button-prev
+    {
+        top: auto;
+        bottom: 0;
+
+        width: 55px;
+        height: 55px;
+    }
+
+    .gallery .swiper-button-prev
+    {
+        left: 50%;
+
+        margin-left: -68px;
+    }
+
+    .gallery .swiper-button-next
+    {
+        right: 50%;
+        left: auto;
+
+        margin-right: -68px;
+    }
+
+
+    .gallery .swiper-button-next .icon,
+    .gallery .swiper-button-prev .icon
+    {
+        width: 14px;
+        height: 24px;
     }
 
 
@@ -204,9 +245,16 @@
     /*--------------
         Partners
     --------------*/
-    .partners .data
+    .partners .swiper
     {
-        width: 100%;
+        padding-bottom: 85px;
+    }
+
+
+    .partners .swiper-button-next,
+    .partners .swiper-button-prev
+    {
+        display: flex;
     }
 
 
@@ -398,12 +446,12 @@
     --------------*/
     .services .image
     {
+        order: 2;
+
         width: 100%;
         height: auto;
         margin-top: 24px;
         padding-bottom: 128.57%;
-
-        order: 2;
     }
 
 
@@ -668,7 +716,7 @@
     -------------*/
     .objects .object .thumb
     {
-        height: 200px;
+        height: 216px;
     }
 
 
@@ -678,20 +726,56 @@
     }
 
 
+    .objects .swiper
+    {
+        padding-top: 0;
+        padding-bottom: 85px;
+    }
+
+
+    .objects .swiper-slide
+    {
+        width: calc(100vw - 48px);
+    }
+
+
+    .objects .swiper-button-next,
     .objects .swiper-button-prev
     {
-        left: 12px;
+        top: auto;
+        bottom: 0;
+
+        width: 55px;
+        height: 55px;
+    }
+
+    .objects .swiper-button-prev
+    {
+        left: 50%;
+
+        margin-left: -68px;
     }
 
     .objects .swiper-button-next
     {
-        right: 12px;
+        right: 50%;
+        left: auto;
+
+        margin-right: -68px;
+    }
+
+
+    .objects .swiper-button-next .icon,
+    .objects .swiper-button-prev .icon
+    {
+        width: 14px;
+        height: 24px;
     }
 
 
     .objects ol
     {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
 

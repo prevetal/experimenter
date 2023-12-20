@@ -194,19 +194,19 @@
     /*--------------
         Gallery
     --------------*/
-    .gallery .data
+    .gallery .swiper-slide
     {
-        width: 100%;
+        width: calc(100vw - 40px);
     }
 
 
 
-    /*--------------
-        Partners
-    --------------*/
-    .partners .data
+    /*-------------
+        Objects
+    -------------*/
+    .objects .swiper-slide
     {
-        width: 100%;
+        width: calc(100vw - 40px);
     }
 
 
