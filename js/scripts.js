@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		el.classList.add('gallery_s' + i)
 
 		let options = {
-			loop: false,
+			loop: true,
 			speed: 500,
 			autoplay: {
 				delay: 3000,
